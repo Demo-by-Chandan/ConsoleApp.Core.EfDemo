@@ -10,6 +10,7 @@ namespace ConsoleApp.MacOs
             var res = "n";
             do
             {
+                TblNewOperationWithoutOrm tbl = new TblNewOperationWithoutOrm();
                 Console.WriteLine("Press \n1 to Get All Students");
                 Console.WriteLine("2 to Get by Id");
                 Console.WriteLine("3 to Create Student");
@@ -19,23 +20,28 @@ namespace ConsoleApp.MacOs
                 switch (choice)
                 {
                     case 1:
-                        GetAll();
+                        //GetAll();
+                        tbl.GetAll();
                         break;
 
                     case 2:
-                        GetById();
+                        //GetById();
+                        tbl.GetById();
                         break;
 
                     case 3:
-                        Create();
+                        //Create();
+                        tbl.Create();
                         break;
 
                     case 4:
-                        Edit();
+                        //Edit();
+                        tbl.Edit();
                         break;
 
                     case 5:
-                        Delete();
+                        //Delete();
+                        tbl.Delete();
                         break;
 
                     default:

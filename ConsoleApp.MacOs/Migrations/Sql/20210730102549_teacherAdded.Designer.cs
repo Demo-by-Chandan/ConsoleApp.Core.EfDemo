@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ConsoleApp.MacOs.Migrations.Sql
 {
-    [DbContext(typeof(SqlContext))]
+    [DbContext(typeof(DefaultContext))]
     [Migration("20210730102549_teacherAdded")]
     partial class teacherAdded
     {

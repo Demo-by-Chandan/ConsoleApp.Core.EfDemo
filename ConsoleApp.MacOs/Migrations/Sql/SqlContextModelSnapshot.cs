@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ConsoleApp.MacOs.Migrations.Sql
 {
-    [DbContext(typeof(SqlContext))]
+    [DbContext(typeof(DefaultContext))]
     partial class SqlContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
